@@ -6,15 +6,16 @@ import links from './links.json';
 
 
 const GraphGenerator = (props) => {
+  // my code  is most of this function, but because it is related to library a lot of it was required part of just making it runnable
   useEffect(() => {
     const ele = document.getElementById("my-graph");
     const myGraph = ForceGraph3D();
     const myData = {
       nodes, links
     };
-
+    
     let hoverNode = null;
-
+    
     myGraph(ele).graphData(myData)
     .nodeLabel(node => `${node.title}`)
     .nodeColor(node => node === hoverNode ? '#e5edf3' : '#7ba5ec')
@@ -43,6 +44,7 @@ const GraphGenerator = (props) => {
 
 export default function App() {
   return (
+    // my code for app structure:
     <div className="App">
       <div class="graph">
         <GraphGenerator />
