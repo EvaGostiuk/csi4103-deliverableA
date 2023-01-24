@@ -2,7 +2,7 @@
   text-align: center;
   width: 100%;
   overflow:auto;
-  background-color: rgba(0, 0, 18, 1); // my addtition
+  background-color: rgba(0, 0, 18, 1); /* my addtition */
 }
 
 .App-logo {
@@ -40,7 +40,7 @@
   }
 }
 
-// my code for styles:
+/* my code for styles:*/
 .sidebar {
   color: rgba(239, 239, 175, 1);
   position: fixed; /*or fixed*/
